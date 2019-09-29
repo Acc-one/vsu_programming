@@ -1,12 +1,13 @@
-x = float (input ('x = '))
-y = float (input ('y = '))
+x = float(input('x = '))
+y = float(input('y = '))
+
 if x > 0 and y > 0:
-    print ('3-я четверть')
+    print('3-я четверть')
 elif x < 0 and y < 0:
-    print ('1-я четверть')
+    print('1-я четверть')
 elif x < 0 and y > 0:
-    print ('2-я четверть')
+    print('2-я четверть')
 elif x > 0 and y < 0:
-    print ('4-я четверть')
+    print('4-я четверть')
 else:
-    print ('Точка лежит на оси')
+    print('Точка лежит на оси')
