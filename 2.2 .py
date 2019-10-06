@@ -6,4 +6,4 @@ while a:
     a = input()
     
 b = sorted(b, reverse = True)
-print('' .join(b))
+print(''.join(b))
