@@ -1,3 +1,3 @@
-a = int(input())
-for b in range(0, 5):
+a = input()
+for b in a:
     print(b)
