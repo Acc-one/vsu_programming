@@ -4,7 +4,7 @@ def fib(n):
     k1 = 0
     k2 = 1
     a = 0
-    while a < n:
+    for a in range(n):
         a += 1
         s = k1 + k2
         k1 = k2
