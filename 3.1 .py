@@ -1,2 +1,2 @@
-expression = input( "Что делаем? : " )
+expression = input("Что делаем? : ")
 print(eval(expression))
