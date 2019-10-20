@@ -8,7 +8,3 @@ def pros(n):
             return False
     return True
 print(pros(n))
-
-    
-        
-    
