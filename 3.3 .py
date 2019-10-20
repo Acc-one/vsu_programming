@@ -5,8 +5,7 @@ print(1)
 def fib(n):
     k1 = 0
     k2 = 1
-    a = 0
-    for a in range(n):
+    for a in range(n-2):
         a += 1
         s = k1 + k2
         k1 = k2
