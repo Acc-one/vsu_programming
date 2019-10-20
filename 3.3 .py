@@ -1,5 +1,7 @@
 n = int(input('n = '))
+print(0)
 print(1)
+
 def fib(n):
     k1 = 0
     k2 = 1
