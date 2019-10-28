@@ -12,8 +12,8 @@ def bfs(dq, people):
         if vekt not in visit:
             if doter(vekt):
                 return vekt
-            else:
-                dq += people.get(vekt, [])
+                break
+            dq += people.get(vekt, [])
             visit.append(vekt)
     return 'Никто не найден'
 
