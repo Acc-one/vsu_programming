@@ -19,9 +19,9 @@ def set_value(key, value):
 
 def del_value(key):
     ind = hash(key)
-    for i in range(len(storage[ind])):
-        if key == storage[ind][i][0]:
-            del storage[ind][i]
+    for i in storage[ind}:
+        if key == i[0]:
+            storage[ind].remove(i)
 
 
 def get_value(key):
