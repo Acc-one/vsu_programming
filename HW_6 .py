@@ -8,17 +8,13 @@ def hash(key):
 
 
 def set_value(key, value):
-    ind = hash(key)
-    if not storage[ind]:
-        storage[ind] = [[key, value]]
+    ind = storage[hash(key)]
+    for i in ind:
+        if key == i[0]:
+            i[1] = value
+            break
     else:
-        for i in range(len(storage)):
-            for x in range(len(storage[i])):
-                if storage[i][x][0] == key:
-                    storage[i][x][1] = value
-                    break
-                else:
-                    storage[i].append([key, value])
+        ind.append([key, value])
 
 
 def get_value(key):
