@@ -21,14 +21,14 @@ def del_value(key):
     ind = hash(key)
     for i in range(len(storage[ind])):
         if key == storage[ind][i][0]:
-            del storage[ind][i]       
+            del storage[ind][i]
 
 
 def get_value(key):
-    ind = hash(key)
-    for i in range(len(storage[ind])):
-        if key == storage[ind][i][0]:
-            return storage[ind][i][1]
+    ind = storage[hash(key)]
+    for i in ind:
+        if key == i[0]:
+            return i[1]
 
 
 set_value('abc', 2)
