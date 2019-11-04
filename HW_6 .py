@@ -27,11 +27,12 @@ def get_value(key):
         if key == storage[ind][i][0]:
             return storage[ind][i][1]
 
-print(get_value('cab'))
-print(get_value('abc'))
+
 set_value('abc', 2)
 set_value('abc', 3)
 set_value('cab', 32)
 set_value('cab', 23)
+print(get_value('cab'))
+print(get_value('abc'))
 
 print(storage)
