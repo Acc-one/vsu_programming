@@ -17,6 +17,13 @@ def set_value(key, value):
         ind.append([key, value])
 
 
+def del_value(key):
+    ind = hash(key)
+    for i in range(len(storage[ind])):
+        if key == storage[ind][i][0]:
+            del storage[ind][i]       
+
+
 def get_value(key):
     ind = hash(key)
     for i in range(len(storage[ind])):
@@ -27,7 +34,13 @@ def get_value(key):
 set_value('abc', 2)
 set_value('abc', 3)
 set_value('cab', 32)
-set_value('cab', 23)
+set_value('cnb', 2)
+set_value('abcd', 2)
+
+print(storage)
+
+del_value('cnb')
+
 print(get_value('cab'))
 print(get_value('abc'))
 
