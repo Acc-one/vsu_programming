@@ -19,7 +19,7 @@ def set_value(key, value):
 
 def del_value(key):
     ind = hash(key)
-    for i in storage[ind}:
+    for i in storage[ind]:
         if key == i[0]:
             storage[ind].remove(i)
 
