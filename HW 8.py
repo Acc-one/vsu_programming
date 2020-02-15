@@ -10,8 +10,9 @@ class Date:
         self.day = input('Day: ')
 
     def __str__(self):
-        return self.year, self.month, self.day, sep='.' 
+        mystr = '.'.join([self.year, self.month, self.day])
+        return mystr
 
 d = Date()
 d.date_ent()
-d. ()
+print(d)
