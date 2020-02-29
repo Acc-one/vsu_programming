@@ -26,12 +26,14 @@ class Date:
             if self.day > 31:
                 return False
             return True
-class DateStamp(Date):
-    def __init__(self, year, month, day):
-        super().__init__(year, month, day)
 
     def __str__(self):
         return f'{self.year}.{self.month}.{self.day}'
+
+
+class DateStamp(Date):
+    def __init__(self, year, month, day):
+        super().__init__(year, month, day)
 
 d = Date(2020, 2, 22)
 d.date_ent()
